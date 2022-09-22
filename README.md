@@ -1,16 +1,16 @@
 # School-Tello-UI
 
-This is a program I made for school! It might not be the best but it works. 
+This is a program I made for school! It might not be the best but it works. \n
 
-There is a GUI that you can controll the drone in.
+There is a GUI that you can controll the drone in.\n
 You cannot use the video from the tello api since i'm slready using pygame
 
 ## Controlls
 
-The buttons on the top are the movements
-on the right bottom are to move the heights
-on the left bottom you can make the drone flip
-Press escape to stop the drone
+- The buttons on the top are the movements
+- on the right bottom are to move the heights
+- on the left bottom you can make the drone flip
+- Press escape to stop the drone
 
 ## SETUP:
 
@@ -28,9 +28,10 @@ Press escape to stop the drone
 
 ## How to go on the tello WiFi
 
-There should be a button on the drone. If it starts blinking different lights, there should be a WiFi on your computer that says Tello-<Numbers> Connect to that.
+- There should be a button on the drone. 
+- If it starts blinking different lights, there should be a WiFi on your computer that says Tello-<Numbers> Connect to that.
 
 ## If you want to add something or are trying to read the code
 
-pygame is a interface that draws on the screen. 
-Tello is a api made by Code4FunSydney bad code but it works https://github.com/code4funSydney/Tello
+- pygame is a interface that draws on the screen. \n
+- Tello is a api made by Code4FunSydney bad code but it works https://github.com/code4funSydney/Tello
