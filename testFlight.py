@@ -1,11 +1,14 @@
+# importing
 from Tello.tello import *
 import pygame
 
+# starting the Tello interface
 start()
 power = get_battery()
 print("Power Level: ", power, "%")
 takeoff()
 
+# getting the controlls from pygame
 from pygame.locals import (
     K_UP,
     K_DOWN,
@@ -18,13 +21,14 @@ from pygame.locals import (
     QUIT,
 )
 
-
+# calculates if the x y is in cx cy with r radius
 def inside_circle(x, y, cx, cy, r):
     if cx - r < x < cx + r and cy - r < y < cy + r:
         return True
     return False
 
 
+# initializes pygame
 pygame.init()
 
 # Set up the drawing window
@@ -33,10 +37,12 @@ screen = pygame.display.set_mode([500, 500])
 button_clicked = -1
 
 game_state = 0
+# makes the buttons red when the drone is still moving
 is_moving = False
 
 drone_speed = 100
 
+# this is the color of the buttons
 BLUE = (92, 154, 255)
 RED = (255, 115, 99)
 
@@ -55,9 +61,6 @@ while running:
             mouse_pos = pygame.mouse.get_pos()
             mouse_x = mouse_pos[0]
             mouse_y = mouse_pos[1]
-
-            print(mouse_x)
-            print(mouse_y)
 
             if inside_circle(mouse_x, mouse_y, 250, 50, 40):
                 button_clicked = 1
